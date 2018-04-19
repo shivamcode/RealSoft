@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="596.0" prefWidth="754.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.RecieptEntry">
+   <children>
+      <ImageView fitHeight="103.0" fitWidth="73.0" layoutX="341.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@fees.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="316.0" layoutY="103.0" text="Fee Receipt Entry">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="studentuid" layoutX="166.0" layoutY="168.0" prefHeight="25.0" prefWidth="112.0" promptText="Enter Student Unique ID" text="#" />
+      <Label layoutX="71.0" layoutY="171.0" text="Student ID :">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="stuname" layoutX="166.0" layoutY="240.0" prefHeight="25.0" prefWidth="359.0" promptText="Student's Name" />
+      <Label layoutX="60.0" layoutY="243.0" text="Student Name :">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="courses" layoutX="166.0" layoutY="312.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="318.0" text="Courses :">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="462.0" layoutY="318.0" text="Total Fee :">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="fees" layoutX="535.0" layoutY="313.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="payingnow" layoutX="166.0" layoutY="415.0" prefHeight="25.0" prefWidth="359.0" promptText="Rupees" />
+      <Label layoutX="80.0" layoutY="418.0" text="Now Paying :">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="feesubmit" defaultButton="true" layoutX="161.0" layoutY="505.0" onAction="#feesubmitAction" prefHeight="37.0" prefWidth="169.0" style="-fx-background-color: #4285F4;" text="Submit " textFill="#fcf8f8">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="feeramain" layoutX="414.0" layoutY="515.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="findbutton" defaultButton="true" layoutX="320.0" layoutY="168.0" onAction="#findputAction" style="-fx-background-color: #4285F4;" text="Find" textFill="#f8f6f6">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXDatePicker fx:id="datepick" layoutX="553.0" layoutY="169.0" promptText="Date" />
+      <Label layoutX="448.0" layoutY="182.0" text="Choose Date :">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="combobox" layoutX="166.0" layoutY="360.0" prefHeight="25.0" prefWidth="151.0" promptText="Select Batch" />
+      <Label layoutX="93.0" layoutY="363.0" text="Batch :">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

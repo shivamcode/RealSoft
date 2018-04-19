@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="496.0" prefWidth="754.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.BatchwiseCollection">
+   <children>
+      <ImageView fitHeight="62.0" fitWidth="146.0" layoutX="309.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@batchwisecol.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="311.0" layoutY="75.0" text="Batch Wise Collection">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="combobox" layoutX="141.0" layoutY="142.0" prefHeight="25.0" prefWidth="174.0" promptText="Select Batch" />
+      <Label layoutX="76.0" layoutY="146.0" text="Batch :">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="datalable" layoutX="430.0" layoutY="157.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="findbutton" defaultButton="true" layoutX="141.0" layoutY="304.0" onAction="#findAction" prefHeight="34.0" prefWidth="111.0" style="-fx-background-color: #4285F4;" text="Find Info !" textFill="#f5f4f4">
+         <font>
+            <Font name="System Bold" size="13.0"  />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

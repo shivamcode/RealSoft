@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="596.0" prefWidth="754.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Batch">
+   <children>
+      <ImageView fitHeight="116.0" fitWidth="120.0" layoutX="319.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@batchformicon.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="326.0" layoutY="103.0" text="Create Batch">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <JFXRadioButton fx:id="cradio" layoutX="293.0" layoutY="167.0" text="C " />
+      <JFXRadioButton fx:id="cppradio" layoutX="363.0" layoutY="167.0" text="C++" />
+      <JFXRadioButton fx:id="dsradio" layoutX="293.0" layoutY="199.0" text="DS" />
+      <JFXRadioButton fx:id="javaradio" layoutX="363.0" layoutY="199.0" text="Java" />
+      <Label layoutX="165.0" layoutY="184.0" text="Choose Language">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXTimePicker fx:id="timepicker" layoutX="298.0" layoutY="350.0" promptText="Time" />
+      <Label layoutX="170.0" layoutY="355.0" text="Time For Batch">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="batchsubmit" defaultButton="true" layoutX="272.0" layoutY="498.0" onAction="#batchSubmitAction" prefHeight="34.0" prefWidth="159.0" style="-fx-background-color: #4285F4;" text="Submit" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="statLabel" layoutX="547.0" layoutY="507.0" textFill="#da0c0c">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

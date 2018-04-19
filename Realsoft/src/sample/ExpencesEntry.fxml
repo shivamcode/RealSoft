@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="594.0" prefWidth="746.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ExpencesEntry">
+   <children>
+      <ImageView fitHeight="92.0" fitWidth="104.0" layoutX="327.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Expenceslogo.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="itemname" layoutX="179.0" layoutY="203.0" prefHeight="25.0" prefWidth="388.0" promptText="Item Name" />
+      <JFXTextField fx:id="place" layoutX="179.0" layoutY="272.0" prefHeight="25.0" prefWidth="388.0" promptText="Place" />
+      <Label layoutX="327.0" layoutY="123.0" text="Expenses Entry">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="price" layoutX="179.0" layoutY="334.0" prefHeight="25.0" prefWidth="388.0" promptText="Price" />
+      <JFXDatePicker fx:id="datepick" layoutX="179.0" layoutY="383.0" promptText="Pick Date" />
+      <JFXButton fx:id="expensesbutton" defaultButton="true" layoutX="179.0" layoutY="488.0" onAction="#expsubmitAction" prefHeight="25.0" prefWidth="198.0" style="-fx-background-color: #4285F4;" text="Submit" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+
+      <Label fx:id="statlabel" layoutX="560.0" layoutY="483.0" textFill="#2c3e50">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="61.0" layoutY="206.0" text="Item Name">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="61.0" layoutY="275.0" text="Place">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="61.0" layoutY="337.0" text="Price">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="61.0" layoutY="388.0" text="Date">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+
+
+   </children>
+</AnchorPane>

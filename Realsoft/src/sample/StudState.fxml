@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="481.0" prefWidth="754.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.StudState">
+   <children>
+      <ImageView fitHeight="98.0" fitWidth="91.0" layoutX="332.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@studstate.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="339.0" layoutY="119.0" text="Add States">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="statesubmit" defaultButton="true" layoutX="200.0" layoutY="375.0" onAction="#stateSubmitAction" prefHeight="38.0" prefWidth="218.0" style="-fx-background-color: #4285F4;" text="Submit" textFill="#f2ecec">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="123.0" layoutY="192.0" text="Student ID :">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="stuid" layoutX="213.0" layoutY="189.0" promptText="Student UID" text="#" />
+      <JFXButton fx:id="find" defaultButton="true" layoutX="364.0" layoutY="189.0" onAction="#stateSubmitAction" style="-fx-background-color: #4285F4;" text="Find" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="stuname" layoutX="213.0" layoutY="263.0" prefHeight="25.0" prefWidth="270.0" promptText="Student Name" />
+      <Label layoutX="104.0" layoutY="266.0" text="Student Name :">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXToggleButton fx:id="togbutton" layoutX="547.0" layoutY="238.0" size="13.0" text=" " toggleColor="#11a104" toggleLineColor="#1ba848" unToggleColor="#ee0202" unToggleLineColor="#ae4141">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXToggleButton>
+      <Label fx:id="status" layoutX="627.0" layoutY="265.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

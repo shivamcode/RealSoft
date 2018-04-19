@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="596.0" prefWidth="754.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CollegeForm">
+   <children>
+      <Label layoutX="304.0" layoutY="119.0" text="College Data Form">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="99.0" fitWidth="102.0" layoutX="328.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@college.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="collegename" layoutX="154.0" layoutY="187.0" prefHeight="26.0" prefWidth="419.0" promptText="College Name" />
+      <JFXTextField fx:id="collegeaddress" layoutX="154.0" layoutY="250.0" prefHeight="26.0" prefWidth="419.0" promptText="College Address " />
+      <JFXTextField fx:id="collegephone" layoutX="154.0" layoutY="309.0" prefHeight="26.0" prefWidth="419.0" promptText="Telephone" />
+      <Label layoutX="35.0" layoutY="200.0" text="College Name" />
+      <Label layoutX="29.0" layoutY="254.0" text="College Address" />
+      <Label layoutX="34.0" layoutY="313.0" text="College Phone" />
+      <JFXButton fx:id="collegedatasubmit" defaultButton="true" layoutX="154.0" layoutY="477.0" onAction="#submitAction" prefHeight="32.0" prefWidth="155.0" style="-fx-background-color: #4285F4;" text="Submit" textFill="#fefeff">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="collegefromlable" layoutX="507.0" layoutY="485.0" textFill="#ff1212">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font></Label>
+   </children>
+</AnchorPane>
